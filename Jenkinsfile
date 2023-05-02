@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Relative path') {
             steps {
-                sh("C:/Users/209000/Desktop/scripts/fibonacci.sh ${env.NUMBER}")
+                sh("chmod +x ./scripts/fibonacci.sh ${env.NUMBER}")
             }
         }
         stage('Full path') {
