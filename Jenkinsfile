@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Relative path') {
             steps {
-                sh("chmod +x ./scripts/fibonacci.sh ${env.NUMBER}")
+                sh('chmod +x ./scripts/fibonacci.sh ${env.NUMBER}')
             }
         }
         stage('Full path') {
